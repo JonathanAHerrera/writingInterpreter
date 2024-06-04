@@ -2,12 +2,7 @@ package token
 
 type TokenType string
 
-type Token struct {
-	Type TokenType
-	Literal string
-}
-
-const {
+const (
 	ILLEGAL = "ILLEGAL"
 	EOF = "EOF"
 
@@ -31,4 +26,10 @@ const {
 	// Keywords
 	FUNCTION = "FUNCTION"
 	LET = "LET"
-}
+)
+
+type Token struct {
+	Type TokenType
+	Literal string
+} 
+
